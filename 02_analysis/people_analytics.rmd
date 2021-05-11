@@ -1,0 +1,14 @@
+---
+title: "People Analytics Analysis"
+author: "Chris Selig"
+date: "5/10/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+    echo = TRUE,
+    warning = F,
+    message = F
+    )
+```
