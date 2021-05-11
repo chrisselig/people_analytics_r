@@ -7,7 +7,7 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
-    echo = TRUE,
+    echo = F,
     warning = F,
     message = F
     )
@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 ```{r loadLibraries}
 library(tidyverse)
 library(here)
+library(skimr)
 ```
 
 ```{r loadScripts}
@@ -25,5 +26,25 @@ library(here)
 
 ```{r readInData}
 raw_hr_dataset <- read_csv(here('00_data','HRDataset_v14.csv'))
+```
+
+
+
+## Executive Summary
+
+Some questions
+
+Is there any relationship between who a person works for and their performance score?
+What is the overall diversity profile of the organization?
+What are our best recruiting sources if we want to ensure a diverse organization?
+Can we predict who is going to terminate and who isn't? What level of accuracy can we achieve on this?
+Are there areas of the company where pay is not equitable?
+
+## The Dataset
+
+## Exploring the Data
+
+```{r}
+skimr::skim(raw_hr_dataset)
 ```
 
