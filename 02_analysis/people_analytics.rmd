@@ -12,3 +12,18 @@ knitr::opts_chunk$set(
     message = F
     )
 ```
+
+```{r loadLibraries}
+library(tidyverse)
+library(here)
+```
+
+```{r loadScripts}
+
+```
+
+
+```{r readInData}
+raw_hr_dataset <- read_csv(here('00_data','HRDataset_v14.csv'))
+```
+
